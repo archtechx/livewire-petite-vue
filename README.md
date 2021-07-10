@@ -1,6 +1,6 @@
-# vue-petite driver for Livewire
+# petite-vue driver for Livewire
 
-This package provides vue-petite support for Livewire.
+This package provides [petite-vue](https://github.com/vuejs/petite-vue) support for [Livewire](https://laravel-livewire.com).
 
 ## Installation
 
