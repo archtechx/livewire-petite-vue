@@ -1,5 +1,5 @@
 {
-  "name": "livewire-petite-vue",
+  "name": "@archtechx/livewire-petite-vue",
   "version": "0.1.0",
   "description": "petite-vue driver for Livewire",
   "files": [
