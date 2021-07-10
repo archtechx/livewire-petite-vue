@@ -1,6 +1,6 @@
 # vue-petite driver for Livewire
 
-This package provides a layer for
+This package provides vue-petite support for Livewire.
 
 ## Installation
 
