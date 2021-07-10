@@ -8,7 +8,7 @@ Currently it's only possible to use this library using a `<script type="module">
 
 ```html
 <script type="module">
-    import { createApp } from 'todo'
+    import { createApp } from 'https://unpkg.com/@archtechx/livewire-petite-vue'
 
     window.addEventListener('livewire:load', () => {
         createApp().mount()
@@ -20,7 +20,7 @@ The imported `createApp` automatically includes a bit of global state and a `v-l
 
 ```html
 <script type="module">
-    import { state, directive } from 'todo'
+    import { state, directive } from 'https://unpkg.com/@archtechx/livewire-petite-vue'
     import { createApp } from 'https://unpkg.com/petite-vue?module'
 
     window.addEventListener('livewire:load', () => {
@@ -52,6 +52,20 @@ If you'd like to defer value changes, i.e. have reactive state in Vue but only u
 ```html
 <div v-livewire.defer="['messages']" v-scope="{ messages: {} }">
 ```
+
+After your bindings are configured, you can simply update state and the changes will sync between Vue and Livewire. Any changes done in Livewire will be reflected in Vue, and any changes done in Vue (e.g. via `v-model` inputs) will be reflected in Livewire.
+
+That's the state. But Livewire can also call methods.
+
+For that, you can simply use the `wire` proxy in your component's state:
+
+```html
+<button type="button" @click="wire.send(id)">
+    Send
+</button>
+```
+
+If the methods return a value, you can do something like `await wire.foo('bar')`.
 
 ```html
 <div v-livewire="['messages']" v-scope="{ messages: {}, foo: 'bar' }">

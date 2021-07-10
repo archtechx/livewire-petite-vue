@@ -1,6 +1,6 @@
 {
   "name": "@archtechx/livewire-petite-vue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "petite-vue driver for Livewire",
   "files": [
     "src/index.js"
