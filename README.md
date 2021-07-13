@@ -31,7 +31,7 @@ The imported `createApp` automatically includes a bit of global state and a `v-l
 
 ## Usage
 
-The package provides a `v-livewire` directive that lets you configure bi-directional links between Vue state and Livewire state.
+The package provides a `v-livewire` directive that lets you configure bidirectional links between Vue state and Livewire state.
 
 For example, if you had a `messages` property in Vue and an `items` property in Livewire, you could do:
 
